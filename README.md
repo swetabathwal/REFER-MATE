@@ -47,3 +47,10 @@ refer-mate/
 ```bash
 git clone https://github.com/yourusername/refer-mate.git
 cd refer-mate
+
+---
+
+If you commit this and your `LICENSE` file together, GitHub will automatically detect your license type and display it at the top of your repository.  
+
+Do you want me to **also add a “Development Checklist”** section in the README so it’s easier for you to follow the step-by-step plan until hosting? That way everything is in one place.
+
