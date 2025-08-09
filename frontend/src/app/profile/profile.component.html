@@ -1,0 +1,29 @@
+<div class="profile-container">
+  <div class="profile-header">
+    <img src="assets/profile-bg.jpg" alt="Profile Background" class="profile-bg" />
+    <div class="profile-details">
+      <img src="assets/user-avatar.jpg" alt="User Avatar" class="avatar" />
+      <h1>Emma Smith</h1>
+      <p class="role">Software Engineer</p>
+      <p class="location">Los Angeles, California</p>
+    </div>
+    <div class="profile-actions">
+      <button class="edit-button" (click)="editProfile()">Edit Profile</button>
+      <button class="settings-button">Settings</button>
+    </div>
+  </div>
+  <div class="profile-body">
+    <div class="action-card" (click)="readyForWork()">
+      <h3>Ready for work</h3>
+      <p>Show recruiters that you're ready for work.</p>
+    </div>
+    <div class="action-card" (click)="sharePosts()">
+      <h3>Share posts</h3>
+      <p>Share latest news to get connected with others.</p>
+    </div>
+    <div class="action-card" (click)="updateProfile()">
+      <h3>Update</h3>
+      <p>Keep your profile updated so that recruiters know you better.</p>
+    </div>
+  </div>
+</div>

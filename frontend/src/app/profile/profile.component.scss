@@ -1,0 +1,116 @@
+.profile-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  .profile-header {
+    position: relative;
+    text-align: center;
+
+    .profile-bg {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .profile-details {
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+
+      .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 3px solid #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        margin: 8px 0 4px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .role,
+      .location {
+        font-size: 14px;
+        color: #555555;
+        margin: 2px 0;
+      }
+    }
+
+    .profile-actions {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+
+      button {
+        padding: 6px 12px;
+        font-size: 14px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &.edit-button {
+          background: #007bff;
+          color: white;
+
+          &:hover {
+            background: #0056b3;
+          }
+        }
+
+        &.settings-button {
+          background: #f0f0f0;
+          color: #333;
+
+          &:hover {
+            background: #e0e0e0;
+          }
+        }
+      }
+    }
+  }
+
+  .profile-body {
+    padding: 20px;
+    display: flex;
+    gap: 16px;
+
+    .action-card {
+      flex: 1;
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #666666;
+      }
+    }
+  }
+}
